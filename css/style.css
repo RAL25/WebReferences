@@ -185,7 +185,12 @@ table {
     }
   }
 
-  .p{
+  /* .p{
+    display: inline;
+    color: #da1738;
+  } */
+
+  h2 p{
     display: inline;
     color: #da1738;
   }
