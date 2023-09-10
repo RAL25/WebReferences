@@ -125,9 +125,11 @@ footer{
 pre{
     padding-right: 25px;
     text-align: left;
-    min-width: 470px;
+    white-space: pre-wrap;
+    overflow-wrap: break-word;
+      
+      
 }
-
 .center{
     max-width: 1200px;
     text-align: center;
@@ -146,11 +148,11 @@ h2.sub-titulo, p{
 }
 
 
-/* Estilo para a tabela */
+/* Estilo para as tabela */
 table {
-    border-collapse: collapse; /* Combina as bordas das células em uma única borda */
-    width: 100%; /* Define a largura da tabela como 100% da largura do contêiner pai */
-    font-family: Arial, sans-serif; /* Define a fonte do texto na tabela */
+    border-collapse: collapse; 
+    width: 100%;
+    font-family: Arial, sans-serif;
   }
   
   /* Estilo para as células do cabeçalho da tabela */
@@ -169,7 +171,7 @@ table {
     border: 1px solid #ddd; /* Borda das células */
   }
   
-  /* Estilo para linhas alternadas (opcional) */
+  /* Estilo para linhas alternadas */
   tr:nth-child(even) {
     background-color: #f2f2f2; /* Cor de fundo das linhas pares */
   }
