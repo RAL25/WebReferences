@@ -9,16 +9,13 @@
 header{
     display: flex;
     padding: 2%;
-    background-color: #301cc4 ;
+    /* background-color: #301cc4 ; */
+    background-color: #007acc ;
     color: white;
     align-items: center;
     justify-content: space-between;
 }
-main{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+
 .menu a{
     text-decoration: none;
     color: white;
@@ -35,9 +32,21 @@ button{
     width: 100px;
 }
 
+button:hover{
+    cursor: pointer;
+}
+
+.corpo1{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 2%;
+}
 .corpo{
     display: flex;
-    align-items: center;
+    width: 100%;
     text-align: center;
     flex-direction: column;
     padding: 2%;
@@ -85,6 +94,7 @@ button{
 }
 .topo{
     line-height: 1.5;
+    text-align: justify;
 }
 .subtitulo-sobre{
     margin-bottom: 30px;
@@ -96,3 +106,72 @@ footer{
     bottom: 0;
     width: 100%;
 }
+
+.exemplo{
+    padding: 15px;
+    border: 2px solid #ddd;
+    background-color: #ddd;
+    border-radius: 5px;
+    text-align: left;
+    line-height: 1.4;
+    margin-bottom: 20px;
+}
+
+.codigo{
+    border-left: 5px solid #007acc;
+    background-color: #3e3e42;
+    color: #ddd;
+}
+pre{
+    padding-right: 25px;
+    text-align: left;
+    min-width: 470px;
+}
+
+.center{
+    max-width: 1200px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.definicao{
+    text-align: justify;
+}
+.atributos{
+    text-align: justify;
+}
+
+h2.sub-titulo, p{
+    margin-bottom: 10px;
+}
+
+
+/* Estilo para a tabela */
+table {
+    border-collapse: collapse; /* Combina as bordas das células em uma única borda */
+    width: 100%; /* Define a largura da tabela como 100% da largura do contêiner pai */
+    font-family: Arial, sans-serif; /* Define a fonte do texto na tabela */
+  }
+  
+  /* Estilo para as células do cabeçalho da tabela */
+  th {
+    background-color: #f2f2f2; /* Cor de fundo do cabeçalho da tabela */
+    color: #333; /* Cor do texto no cabeçalho da tabela */
+    font-weight: bold; /* Define o texto em negrito */
+    padding: 8px; /* Espaçamento interno das células do cabeçalho */
+    border: 1px solid #ddd; /* Borda das células do cabeçalho */
+  }
+  
+  /* Estilo para as células da tabela */
+  td {
+    /*text-align: justify;*//*Alinhamento do texto nas celulas*/
+    padding: 8px; /* Espaçamento interno das células */
+    border: 1px solid #ddd; /* Borda das células */
+  }
+  
+  /* Estilo para linhas alternadas (opcional) */
+  tr:nth-child(even) {
+    background-color: #f2f2f2; /* Cor de fundo das linhas pares */
+  }
+
+  

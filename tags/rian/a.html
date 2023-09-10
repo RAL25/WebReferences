@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/tags.css">
+    <link rel="stylesheet" href="../../css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
@@ -21,133 +21,135 @@
             <a href="../../sobre.html">sobre</a>
         </div>
     </header>
-
-    <main class="corpo">
-        <div class="topo">
-            <h2 class="titulo">Tag HTML &lt;a&gt;</h2>
-        </div>
-
-        <div class="definicao">
-            <h2 class="sub-titulo">Definição</h2>
-            <p>
-                A  tag &lt;a&gt; define um hiperlink, que é usado para vincular de uma página a outra. O atributo mais importante do &lt;a&gt; elemento é o href atributo, que indica o destino do link.Por padrão, os links aparecerão da seguinte maneira em todos os navegadores:
-                <li> Um link não visitado é sublinhado e azul</li>
-                <li> Um link visitado é sublinhado e roxo</li>
-                <li> Um link ativo é sublinhado e vermelho</li>
-            </p>
-        </div>
-
-        <div class="atributos">
-            <h2 class="sub-titulo">Atributos</h2>
+    <div class="center">
+        <main class="corpo">
+            <div class="topo">
+                <h2 class="titulo">Tag HTML &lt;a&gt;</h2>
+            </div>
+    
+            <div class="definicao">
+                <h2 class="sub-titulo">Definição</h2>
+                <p>
+                    A  tag &lt;a&gt; define um hiperlink, que é usado para vincular de uma página a outra. O atributo mais importante do &lt;a&gt; elemento é o href atributo, que indica o destino do link.Por padrão, os links aparecerão da seguinte maneira em todos os navegadores:
+                    <li> Um link não visitado é sublinhado e azul</li>
+                    <li> Um link visitado é sublinhado e roxo</li>
+                    <li> Um link ativo é sublinhado e vermelho</li>
+                </p>
+            </div>
+    
+            <div class="atributos">
+                <h2 class="sub-titulo">Atributos</h2>
+                <table class="tabelaTags">
+                    <thead>
+                        <tr>
+                            <th>Atributo</th>
+                            <th>Valor</th>
+                            <th>Descrição</th>
+                            
+                        </tr>
+                    </thead>
+                    <tbody class="nthchild">
+                        <tr>
+                            <td>download</td>
+                            <td>filename</td>
+                            <td>Especifica que o destino será baixado quando um usuário clicar no hiperlink</td>                       
+                        </tr>  
+                        <tr>
+                            <td>href</td>
+                            <td>URL</td>
+                            <td>Especifica o URL da página para onde o link vai</td>  
+                        </tr>    
+                        <tr>
+                            <td>hreflang</td>
+                            <td>language_code</td>
+                            <td>Especifica o idioma do documento vinculado</td>  
+                        </tr>
+                        <tr>
+                            <td>media</td>
+                            <td>media_query</td>
+                            <td>Especifica para qual mídia/dispositivo o documento vinculado está otimizado.</td>  
+                        </tr>
+                        <tr>
+                            <td>ping</td>
+                            <td>list_of_URLs</td>
+                            <td>Especifica uma lista de URLs separadas por espaços para as quais, quando o link for seguido, as solicitações de postagem com o corpo ping serão enviadas pelo navegador (em segundo plano). Normalmente usado para rastreamento.</td>  
+                        </tr>
+                        <tr>
+                            <td>referrerpolicy</td>
+                            <td>no-referrer<br>no-referrer-when-downgrade<br>origin<br>origin-when-cross-origin<br>same-origin<br>strict-origin-when-cross-origin<br>unsafe-url</td>
+                            <td>Especifica quais informações de referência serão enviadas com o link</td>  
+                        </tr>
+                        <tr>
+                            <td>rel</td>
+                            <td>alternate<br>author<br>bookmark<br>external<br>help<br>license<br>nofollow<br>noreferrer<br>noopener<br>prev<br>search<br>tag</td>
+                            <td>Especifica a relação entre o documento atual e o documento vinculado</td>  
+                        </tr>
+                        <tr>
+                            <td>target</td>
+                            <td>_blank<br>_parent<br>_self<br>_top</td>
+                            <td>Especifica onde abrir o documento vinculado</td>  
+                        </tr>
+                        <tr>
+                            <td>type</td>
+                            <td>media_type</td>
+                            <td>Especifica o tipo de mídia do documento vinculado</td>  
+                        </tr>
+                    </tbody>
+                </table>
+                <h2 class="sub-titulo">Atributos Globais</h2>
+                <p>A tag <code> &lt;a&gt; </code> também suporta o Atributos globais em HTML.</p>
+                <h2 class="sub-titulo">Atributos Especificos</h2>
+                <p>A tag <code> &lt;a&gt; </code> também suporta o Atributos de eventos em HTML.</p>
+            </div>
+    
+            <div class="exemplo">
+                <h2 class="sub-titulo">Exemplo</h2>
+                <p>Como abrir um link em uma nova janela do navegador:</p>
+                <div class="codigo">
+                    <code>
+    <pre>
+        
+        &lt;a href="https://www.ifnmg.edu.br" target="_blank"&gt;Visite o site do IFNMG&lt;/a&gt;
+    </pre>                   
+                    </code>
+                </div>
+            </div>
+    
+            <div class="suporte">
+                <h2 class="sub-titulo">Suporte de navegador</h2>
+            </div>
+    
             <table class="tabelaTags">
                 <thead>
                     <tr>
-                        <th>Atributo</th>
-                        <th>Valor</th>
-                        <th>Descrição</th>
-                        
+                        <th>Tag</th>
+                        <th><img src="../../imagens/chrome.png"></th>
+                        <th><img src="../../imagens/edge.png"></th>
+                        <th><img src="../../imagens/firefox.png"></th>
+                        <th><img src="../../imagens/safari.png"></th>
+                        <th><img src="../../imagens/opera.png"></th>
                     </tr>
                 </thead>
                 <tbody class="nthchild">
                     <tr>
-                        <td>download</td>
-                        <td>filename</td>
-                        <td>Especifica que o destino será baixado quando um usuário clicar no hiperlink</td>                       
-                    </tr>  
-                    <tr>
-                        <td>href</td>
-                        <td>URL</td>
-                        <td>Especifica o URL da página para onde o link vai</td>  
-                    </tr>    
-                    <tr>
-                        <td>hreflang</td>
-                        <td>language_code</td>
-                        <td>Especifica o idioma do documento vinculado</td>  
-                    </tr>
-                    <tr>
-                        <td>media</td>
-                        <td>media_query</td>
-                        <td>Especifica para qual mídia/dispositivo o documento vinculado está otimizado.</td>  
-                    </tr>
-                    <tr>
-                        <td>ping</td>
-                        <td>list_of_URLs</td>
-                        <td>Especifica uma lista de URLs separadas por espaços para as quais, quando o link for seguido, as solicitações de postagem com o corpo ping serão enviadas pelo navegador (em segundo plano). Normalmente usado para rastreamento.</td>  
-                    </tr>
-                    <tr>
-                        <td>referrerpolicy</td>
-                        <td>no-referrer<br>no-referrer-when-downgrade<br>origin<br>origin-when-cross-origin<br>same-origin<br>strict-origin-when-cross-origin<br>unsafe-url</td>
-                        <td>Especifica quais informações de referência serão enviadas com o link</td>  
-                    </tr>
-                    <tr>
-                        <td>rel</td>
-                        <td>alternate<br>author<br>bookmark<br>external<br>help<br>license<br>nofollow<br>noreferrer<br>noopener<br>prev<br>search<br>tag</td>
-                        <td>Especifica a relação entre o documento atual e o documento vinculado</td>  
-                    </tr>
-                    <tr>
-                        <td>target</td>
-                        <td>_blank<br>_parent<br>_self<br>_top</td>
-                        <td>Especifica onde abrir o documento vinculado</td>  
-                    </tr>
-                    <tr>
-                        <td>type</td>
-                        <td>media_type</td>
-                        <td>Especifica o tipo de mídia do documento vinculado</td>  
-                    </tr>
+                        <td>&lt;a&gt;</td>
+                        <td>Sim</td>
+                        <td>Sim</td>
+                        <td>Sim</td>
+                        <td>Sim</td>
+                        <td>Sim</td>
+                    </tr>                                 
                 </tbody>
             </table>
-            <h2 class="sub-titulo">Atributos Globais</h2>
-            <p>A tag <code> &lt;a&gt; </code> também suporta o Atributos globais em HTML.</p>
-            <h2 class="sub-titulo">Atributos Especificos</h2>
-            <p>A tag <code> &lt;a&gt; </code> também suporta o Atributos de eventos em HTML.</p>
-        </div>
-
-        <div class="exemplo">
-            <h2 class="sub-titulo">Exemplo</h2>
-            <p>Como abrir um link em uma nova janela do navegador:</p>
-            <div class="codigo">
-                <code>
-<pre>
-    &lt;a href="https://www.ifnmg.edu.br" target="_blank"&gt;Visite o site do IFNMG&lt;/a&gt;
-</pre>                   
-                </code>
+    
+            <div class="base">
+                <div class="botoes">
+                    <a href="../gabriel/var.html"><button class="botao_controle">var</button></a>
+                    <a href="../yodemis/base.html"><button class="botao_controle">base</button></a>
+                </div>
             </div>
-        </div>
-
-        <div class="suporte">
-            <h2 class="sub-titulo">Suporte de navegador</h2>
-        </div>
-
-        <table class="tabelaTags">
-            <thead>
-                <tr>
-                    <th>Tag</th>
-                    <th><img src="../../imagens/chrome.png"></th>
-                    <th><img src="../../imagens/edge.png"></th>
-                    <th><img src="../../imagens/firefox.png"></th>
-                    <th><img src="../../imagens/safari.png"></th>
-                    <th><img src="../../imagens/opera.png"></th>
-                </tr>
-            </thead>
-            <tbody class="nthchild">
-                <tr>
-                    <td>&lt;a&gt;</td>
-                    <td>Sim</td>
-                    <td>Sim</td>
-                    <td>Sim</td>
-                    <td>Sim</td>
-                    <td>Sim</td>
-                </tr>                                 
-            </tbody>
-        </table>
-
-        <div class="base">
-            <div class="botoes">
-                <a href="../gabriel/var.html"><button class="botao_controle">var</button></a>
-                <a href="../yodemis/base.html"><button class="botao_controle">base</button></a>
-            </div>
-        </div>
-    </main>
+        </main>
+    </div>
 
     <footer class="rodape">
         <p>Copyright &copy; 2023 - Dev Web</p>

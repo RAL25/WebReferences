@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/tags.css">
+    <link rel="stylesheet" href="../../css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
@@ -22,161 +22,165 @@
         </div>
     </header>
 
-    <main class="corpo">
-        <div class="topo">
-            <h2 class="titulo">Tag HTML &lt;textarea&gt;</h2>
-        </div>
+    <div class="center">
+        <main class="corpo">
+            <div class="topo">
+                <h2 class="titulo">Tag HTML &lt;textarea&gt;</h2>
+            </div>
+    
+            <div class="definicao">
+                <h2 class="sub-titulo">Definição</h2>
+                <p>
+                    A tag &lt;textarea&gt; define um controle de entrada de texto multilinha.<br>
+    
+                        O elemento &lt;textarea&gt; é frequentemente usado em um formulário para coletar entradas do usuário, como comentários ou avaliações.<br>
+                        
+                        Uma área de texto pode conter um número ilimitado de caracteres e o texto é renderizado em uma fonte de largura fixa (geralmente Courier).<br>
+                        
+                        O tamanho de uma área de texto é especificado pelos atributos cols e rows(ou com CSS).<br>
+                        
+                        O atributo name é necessário para referenciar os dados do formulário após o envio do formulário (se você omitir o nameatributo, nenhum dado da área de texto será enviado).<br>
+                        
+                        O atributo id é necessário para associar a área de texto a um rótulo.<br>
+                </p>
+                <span><strong>Dica:</strong> Sempre adicione a tag &lt;label&gt; para melhores práticas de acessibilidade!</span>
+            </div>
+    
+            <div class="atributos">
+                <h2 class="sub-titulo">Atributos</h2>
+                <table class="tabelaTags">
+                    <thead>
+                        <tr>
+                            <th>Atibuto</th>
+                            <th>Valor</th>
+                            <th>Descrição</th>
+                        </tr>
+                    </thead>
+                    <tbody class="nthchild">
+                        <tr>
+                            <td>autofocus</td>
+                            <td>autofocus</td>
+                            <td>Especifica que uma área de texto deve receber foco automaticamente quando a página for carregada</td>
+                        </tr>
+                        <tr>
+                            <td>cols</td>
+                            <td>number</td>
+                            <td>Especifica a largura visível de uma área de texto</td>
+                        </tr>
+                        <tr>
+                            <td>dirname</td>
+                            <td>textareaname.dir</td>
+                            <td>Especifica o diretório que o texto da área de texto será enviado</td>
+                        </tr>
+                        <tr>
+                            <td>disabled</td>
+                            <td>disabled</td>
+                            <td>Especifica que uma área de texto deve ser desativada</td>
+                        </tr>
+                        <tr>
+                            <td>form</td>
+                            <td>form_id</td>
+                            <td>Especifica a qual formulário a área de texto pertence</td>
+                        </tr>
+                        <tr>
+                            <td>maxlength</td>
+                            <td>number</td>
+                            <td>Especifica o número máximo de caracteres permitidos na área de texto</td>
+                        </tr>
+                        <tr>
+                            <td>name</td>
+                            <td>text</td>
+                            <td>Especifica um nome para uma área de texto</td>
+                        </tr>
+                        <tr>
+                            <td>placeholder</td>
+                            <td>text</td>
+                            <td>Especifica uma breve dica que descreve o valor esperado de uma área de texto</td>
+                        </tr>
+                        <tr>
+                            <td>readonly</td>
+                            <td>readonly</td>
+                            <td>especifica que uma área de texto deve ser somente leitura</td>
+                        </tr>
+                        <tr>
+                            <td>required</td>
+                            <td>required</td>
+                            <td>Especifica que uma área de texto é obrigatória/deve ser preenchida</td>
+                        </tr>
+                        <tr>
+                            <td>rows</td>
+                            <td>number</td>
+                            <td>Especifica o número visível de linhas em uma área de texto</td>
+                        </tr>
+                        <tr>
+                            <td>wrap</td>
+                            <td>
+                                hard<br>
+                                soft<br>
+                            </td>
+                            <td>especifica como o texto em uma área de texto deve ser quebrado quando enviado em um formulário</td>
+                        </tr>                    
+                    </tbody>
+                </table>
+                <h2 class="sub-titulo">Atributos Globais</h2>
+                <p>A tag &lt;textarea&gt; também suporta atributos globais em HTML.</p>
+                <h2 class="sub-titulo">Atributos de Evento</h2>
+                <p>A tag &lt;textarea&gt; também suporta atributos de evento em HTML.</p>
+            </div>
+    
+            <div class="exemplo">
+                <h2 class="sub-titulo">Exemplo</h2>
+                <p>Um controle de entrada de texto multilinha (área de texto):</p>
+                <div class="codigo">
+                    <code>
+    <pre>
+        
+        &lt;label for="w3review"&gt;Review of W3Schools:&lt;/label&gt;
 
-        <div class="definicao">
-            <h2 class="sub-titulo">Definição</h2>
-            <p>
-                A tag &lt;textarea&gt; define um controle de entrada de texto multilinha.<br>
-
-                    O elemento &lt;textarea&gt; é frequentemente usado em um formulário para coletar entradas do usuário, como comentários ou avaliações.<br>
-                    
-                    Uma área de texto pode conter um número ilimitado de caracteres e o texto é renderizado em uma fonte de largura fixa (geralmente Courier).<br>
-                    
-                    O tamanho de uma área de texto é especificado pelos atributos cols e rows(ou com CSS).<br>
-                    
-                    O atributo name é necessário para referenciar os dados do formulário após o envio do formulário (se você omitir o nameatributo, nenhum dado da área de texto será enviado).<br>
-                    
-                    O atributo id é necessário para associar a área de texto a um rótulo.<br>
-            </p>
-            <span><strong>Dica:</strong> Sempre adicione a tag &lt;label&gt; para melhores práticas de acessibilidade!</span>
-        </div>
-
-        <div class="atributos">
-            <h2 class="sub-titulo">Atributos</h2>
+        &lt;textarea id="w3review" name="w3review" rows="4" cols="50"&gt;
+            At w3schools.com you will learn how to make a website. 
+            They offer free tutorials in all web development technologies.
+        &lt;/textarea&gt;
+    </pre>                   
+                    </code>
+                </div>
+            </div>
+    
+            <div class="suporte">
+                <h2 class="sub-titulo">Suporte de navegador</h2>
+            </div>
+    
             <table class="tabelaTags">
                 <thead>
                     <tr>
-                        <th>Atibuto</th>
-                        <th>Valor</th>
-                        <th>Descrição</th>
+                        <th>Tag</th>
+                        <th><img src="../../imagens/chrome.png"></th>
+                        <th><img src="../../imagens/edge.png"></th>
+                        <th><img src="../../imagens/firefox.png"></th>
+                        <th><img src="../../imagens/safari.png"></th>
+                        <th><img src="../../imagens/opera.png"></th>
                     </tr>
                 </thead>
                 <tbody class="nthchild">
                     <tr>
-                        <td>autofocus</td>
-                        <td>autofocus</td>
-                        <td>Especifica que uma área de texto deve receber foco automaticamente quando a página for carregada</td>
-                    </tr>
-                    <tr>
-                        <td>cols</td>
-                        <td>number</td>
-                        <td>Especifica a largura visível de uma área de texto</td>
-                    </tr>
-                    <tr>
-                        <td>dirname</td>
-                        <td>textareaname.dir</td>
-                        <td>Especifica o diretório que o texto da área de texto será enviado</td>
-                    </tr>
-                    <tr>
-                        <td>disabled</td>
-                        <td>disabled</td>
-                        <td>Especifica que uma área de texto deve ser desativada</td>
-                    </tr>
-                    <tr>
-                        <td>form</td>
-                        <td>form_id</td>
-                        <td>Especifica a qual formulário a área de texto pertence</td>
-                    </tr>
-                    <tr>
-                        <td>maxlength</td>
-                        <td>number</td>
-                        <td>Especifica o número máximo de caracteres permitidos na área de texto</td>
-                    </tr>
-                    <tr>
-                        <td>name</td>
-                        <td>text</td>
-                        <td>Especifica um nome para uma área de texto</td>
-                    </tr>
-                    <tr>
-                        <td>placeholder</td>
-                        <td>text</td>
-                        <td>Especifica uma breve dica que descreve o valor esperado de uma área de texto</td>
-                    </tr>
-                    <tr>
-                        <td>readonly</td>
-                        <td>readonly</td>
-                        <td>especifica que uma área de texto deve ser somente leitura</td>
-                    </tr>
-                    <tr>
-                        <td>required</td>
-                        <td>required</td>
-                        <td>Especifica que uma área de texto é obrigatória/deve ser preenchida</td>
-                    </tr>
-                    <tr>
-                        <td>rows</td>
-                        <td>number</td>
-                        <td>Especifica o número visível de linhas em uma área de texto</td>
-                    </tr>
-                    <tr>
-                        <td>wrap</td>
-                        <td>
-                            hard<br>
-                            soft<br>
-                        </td>
-                        <td>especifica como o texto em uma área de texto deve ser quebrado quando enviado em um formulário</td>
-                    </tr>                    
+                        <td>&lt;textarea&gt;</td>
+                        <td>Sim</td>
+                        <td>Sim</td>
+                        <td>Sim</td>
+                        <td>Sim</td>
+                        <td>Sim</td>
+                    </tr>                                 
                 </tbody>
             </table>
-            <h2 class="sub-titulo">Atributos Globais</h2>
-            <p>A tag &lt;textarea&gt; também suporta atributos globais em HTML.</p>
-            <h2 class="sub-titulo">Atributos de Evento</h2>
-            <p>A tag &lt;textarea&gt; também suporta atributos de evento em HTML.</p>
-        </div>
-
-        <div class="exemplo">
-            <h2 class="sub-titulo">Exemplo</h2>
-            <p>Um controle de entrada de texto multilinha (área de texto):</p>
-            <div class="codigo">
-                <code>
-<pre>
-    &lt;label for="w3review"&gt;Review of W3Schools:&lt;/label&gt;
-
-    &lt;textarea id="w3review" name="w3review" rows="4" cols="50"&gt;
-    At w3schools.com you will learn how to make a website. They offer free tutorials in all web development technologies.
-    &lt;/textarea&gt;
-</pre>                   
-                </code>
+    
+            <div class="base">
+                <div class="botoes">
+                    <a href="../gabriel/template.html"><button class="botao_controle">template</button></a>
+                    <a href="../gabriel/track.html"><button class="botao_controle">track</button></a>
+                </div>
             </div>
-        </div>
-
-        <div class="suporte">
-            <h2 class="sub-titulo">Suporte de navegador</h2>
-        </div>
-
-        <table class="tabelaTags">
-            <thead>
-                <tr>
-                    <th>Tag</th>
-                    <th><img src="../../imagens/chrome.png"></th>
-                    <th><img src="../../imagens/edge.png"></th>
-                    <th><img src="../../imagens/firefox.png"></th>
-                    <th><img src="../../imagens/safari.png"></th>
-                    <th><img src="../../imagens/opera.png"></th>
-                </tr>
-            </thead>
-            <tbody class="nthchild">
-                <tr>
-                    <td>&lt;textarea&gt;</td>
-                    <td>Sim</td>
-                    <td>Sim</td>
-                    <td>Sim</td>
-                    <td>Sim</td>
-                    <td>Sim</td>
-                </tr>                                 
-            </tbody>
-        </table>
-
-        <div class="base">
-            <div class="botoes">
-                <a href="../gabriel/template.html"><button class="botao_controle">template</button></a>
-                <a href="../gabriel/track.html"><button class="botao_controle">track</button></a>
-            </div>
-        </div>
-    </main>
+        </main>
+    </div>
 
     <footer class="rodape">
         <p>Copyright &copy; 2023 - Dev Web</p>

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/tags.css">
+    <link rel="stylesheet" href="../../css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
@@ -22,132 +22,135 @@
         </div>
     </header>
 
-    <main class="corpo">
-        <div class="topo">
-            <h2 class="titulo">Tag HTML &lt;script&gt;</h2>
-        </div>
-
-        <div class="definicao">
-            <h2 class="sub-titulo">Definição</h2>
-            <p>
-                O &lt;script&gt; tag é usado para incorporar um script do lado do cliente ( JavaScript ). O &lt;script&gt; elemento que contém instruções de script ou aponta para um arquivo de script externo através do atributo src. Os usos comuns do JavaScript são manipulação de imagem, validação de formulário e alterações dinâmicas de conteúdo.
-            </p>
-        </div>
-
-        <div class="atributos">
-            <h2 class="sub-titulo">Atributos</h2>
+    <div class="center">
+        <main class="corpo">
+            <div class="topo">
+                <h2 class="titulo">Tag HTML &lt;script&gt;</h2>
+            </div>
+    
+            <div class="definicao">
+                <h2 class="sub-titulo">Definição</h2>
+                <p>
+                    O &lt;script&gt; tag é usado para incorporar um script do lado do cliente ( JavaScript ). O &lt;script&gt; elemento que contém instruções de script ou aponta para um arquivo de script externo através do atributo src. Os usos comuns do JavaScript são manipulação de imagem, validação de formulário e alterações dinâmicas de conteúdo.
+                </p>
+            </div>
+    
+            <div class="atributos">
+                <h2 class="sub-titulo">Atributos</h2>
+                <table class="tabelaTags">
+                    <thead>
+                        <tr>
+                            <th>Tag</th>
+                            <th>Valor</th>
+                            <th>Descrição</th>
+                        </tr>
+                    </thead>
+                    <tbody class="nthchild">
+                        <tr>
+                            <td>async</td>
+                            <td>async</td>
+                            <td>Especifica que o script é baixado paralelamente à análise da página e executado assim que estiver disponível (antes da conclusão da análise) (somente para scripts externos)</td>
+                        </tr>                    
+                        <tr>
+                            <td>crossorigin</td>
+                            <td>anonymous <br>
+                                use-credentials</td>
+                            <td>Define o modo da solicitação para uma solicitação HTTP CORS</td>
+                        </tr>                    
+                        <tr>
+                            <td>defer</td>
+                            <td>defer</td>
+                            <td>Especifica que o script é baixado paralelamente à análise da página e executado após a conclusão da análise da página (somente para scripts externos)</td>
+                        </tr>                    
+                        <tr>
+                            <td>integrity</td>
+                            <td>filehash</td>
+                            <td>Permite que um navegador verifique o script obtido para garantir que o código nunca seja carregado se a fonte tiver sido manipulada</td>
+                        </tr>                    
+                        <tr>
+                            <td>nomodule</td>
+                            <td>True <br>
+                                False</td>
+                            <td>Especifica que o script não deve ser executado em navegadores que suportam módulos ES2015</td>
+                        </tr>                    
+                        <tr>
+                            <td>referrerpolicy	</td>
+                            <td>no-referrer <br>
+                                no-referrer-when-downgrade <br>
+                                origin<br>
+                                origin-when-cross-origin<br>
+                                same-origin<br>
+                                strict-origin<br>
+                                strict-origin-when-cross-origin<br>
+                                unsafe-url</td>
+                            <td>Especifica quais informações de referência serão enviadas ao buscar um script</td>
+                        </tr>                    
+                        <tr>
+                            <td>src</td>
+                            <td>URL</td>
+                            <td>Especifica a URL de um arquivo de script externo</td>
+                        </tr>                    
+                        <tr>
+                            <td>type</td>
+                            <td>sripttype</td>
+                            <td>Especifica o tipo de mídia do script</td>
+                        </tr>                    
+                    </tbody>
+                </table>
+                <h2 class="sub-titulo">Atributos Globais</h2>
+                <p>A tag<code> &lt;iframe&gt; </code> também suporta o Atributos globais em HTML.</p>
+            </div>
+    
+            <div class="exemplo">
+                <h2 class="sub-titulo">Exemplo</h2>
+                <p>Escreva "Olá JavaScript!" com JavaScript:</p>
+                <div class="codigo">
+                    <code>
+    <pre>
+        
+        &lt;script&gt;
+            document.getElementById("demo").innerHTML = "Hello JavaScript!";
+        &lt;/script&gt;
+    </pre>                   
+                    </code>
+                </div>
+            </div>
+    
+            <div class="suporte">
+                <h2 class="sub-titulo">Suporte de navegador</h2>
+            </div>
+    
             <table class="tabelaTags">
                 <thead>
                     <tr>
                         <th>Tag</th>
-                        <th>Valor</th>
-                        <th>Descrição</th>
+                        <th><img src="../../imagens/chrome.png"></th>
+                        <th><img src="../../imagens/edge.png"></th>
+                        <th><img src="../../imagens/firefox.png"></th>
+                        <th><img src="../../imagens/safari.png"></th>
+                        <th><img src="../../imagens/opera.png"></th>
                     </tr>
                 </thead>
                 <tbody class="nthchild">
                     <tr>
-                        <td>async</td>
-                        <td>async</td>
-                        <td>Especifica que o script é baixado paralelamente à análise da página e executado assim que estiver disponível (antes da conclusão da análise) (somente para scripts externos)</td>
-                    </tr>                    
-                    <tr>
-                        <td>crossorigin</td>
-                        <td>anonymous <br>
-                            use-credentials</td>
-                        <td>Define o modo da solicitação para uma solicitação HTTP CORS</td>
-                    </tr>                    
-                    <tr>
-                        <td>defer</td>
-                        <td>defer</td>
-                        <td>Especifica que o script é baixado paralelamente à análise da página e executado após a conclusão da análise da página (somente para scripts externos)</td>
-                    </tr>                    
-                    <tr>
-                        <td>integrity</td>
-                        <td>filehash</td>
-                        <td>Permite que um navegador verifique o script obtido para garantir que o código nunca seja carregado se a fonte tiver sido manipulada</td>
-                    </tr>                    
-                    <tr>
-                        <td>nomodule</td>
-                        <td>True <br>
-                            False</td>
-                        <td>Especifica que o script não deve ser executado em navegadores que suportam módulos ES2015</td>
-                    </tr>                    
-                    <tr>
-                        <td>referrerpolicy	</td>
-                        <td>no-referrer <br>
-                            no-referrer-when-downgrade <br>
-                            origin<br>
-                            origin-when-cross-origin<br>
-                            same-origin<br>
-                            strict-origin<br>
-                            strict-origin-when-cross-origin<br>
-                            unsafe-url</td>
-                        <td>Especifica quais informações de referência serão enviadas ao buscar um script</td>
-                    </tr>                    
-                    <tr>
-                        <td>src</td>
-                        <td>URL</td>
-                        <td>Especifica a URL de um arquivo de script externo</td>
-                    </tr>                    
-                    <tr>
-                        <td>type</td>
-                        <td>sripttype</td>
-                        <td>Especifica o tipo de mídia do script</td>
-                    </tr>                    
+                        <td>&lt;script&gt;</td>
+                        <td>Sim</td>
+                        <td>Sim</td>
+                        <td>Sim</td>
+                        <td>Sim</td>
+                        <td>Sim</td>
+                    </tr>                                 
                 </tbody>
             </table>
-            <h2 class="sub-titulo">Atributos Globais</h2>
-            <p>A tag<code> &lt;iframe&gt; </code> também suporta o Atributos globais em HTML.</p>
-        </div>
-
-        <div class="exemplo">
-            <h2 class="sub-titulo">Exemplo</h2>
-            <p>Escreva "Olá JavaScript!" com JavaScript:</p>
-            <div class="codigo">
-                <code>
-<pre>
-    &lt;script&gt;
-        document.getElementById("demo").innerHTML = "Hello JavaScript!";
-    &lt;/script&gt;
-</pre>                   
-                </code>
+    
+            <div class="base">
+                <div class="botoes">
+                    <a href="../yodemis/meta.html"><button class="botao_controle">meta</button></a>
+                    <a href="../gabriel/tbody.html"><button class="botao_controle">tbody</button></a>
+                </div>
             </div>
-        </div>
-
-        <div class="suporte">
-            <h2 class="sub-titulo">Suporte de navegador</h2>
-        </div>
-
-        <table class="tabelaTags">
-            <thead>
-                <tr>
-                    <th>Tag</th>
-                    <th><img src="../../imagens/chrome.png"></th>
-                    <th><img src="../../imagens/edge.png"></th>
-                    <th><img src="../../imagens/firefox.png"></th>
-                    <th><img src="../../imagens/safari.png"></th>
-                    <th><img src="../../imagens/opera.png"></th>
-                </tr>
-            </thead>
-            <tbody class="nthchild">
-                <tr>
-                    <td>&lt;script&gt;</td>
-                    <td>Sim</td>
-                    <td>Sim</td>
-                    <td>Sim</td>
-                    <td>Sim</td>
-                    <td>Sim</td>
-                </tr>                                 
-            </tbody>
-        </table>
-
-        <div class="base">
-            <div class="botoes">
-                <a href="../yodemis/meta.html"><button class="botao_controle">meta</button></a>
-                <a href="../gabriel/tbody.html"><button class="botao_controle">tbody</button></a>
-            </div>
-        </div>
-    </main>
+        </main>
+    </div>
 
     <footer class="rodape">
         <p>Copyright &copy; 2023 - Dev Web</p>

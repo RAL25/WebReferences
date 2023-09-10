@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/tags.css">
+    <link rel="stylesheet" href="../../css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
@@ -21,130 +21,133 @@
             <a href="../../sobre.html">sobre</a>
         </div>
     </header>
-
-    <main class="corpo">
-        <div class="topo">
-            <h2 class="titulo">Tag HTML &lt;meta&gt;</h2>
-        </div>
-
-        <div class="definicao">
-            <h2 class="sub-titulo">Definição</h2>
-            <p>
-                A tag &lt;meta&gt; define metadados sobre um documento HTML. Metadados são dados (informações) sobre dados.<br>
-
-                tags &lt;meta&gt;  sempre ficam dentro do elemento &lt;head&gt; e normalmente são usadas para especificar conjunto de caracteres, descrição da página, palavras-chave, autor do documento e configurações da janela de visualização.<br>
-
-                Os metadados não serão exibidos na página, mas podem ser analisados ​​por máquina.<br>
-
-                Os metadados são usados ​​por navegadores (como exibir conteúdo ou recarregar páginas), mecanismos de pesquisa (palavras-chave) e outros serviços da web.<br>
-
-                Existe um método para permitir que os web designers assumam o controle da janela de visualização (a área visível do usuário em uma página da web), por meio da tag &lt;meta&gt;.<br>
-            </p>
-        </div>
-
-        <div class="atributos">
-            <h2 class="sub-titulo">Atributos</h2>
+    
+    <div class="center">
+        <main class="corpo">
+            <div class="topo">
+                <h2 class="titulo">Tag HTML &lt;meta&gt;</h2>
+            </div>
+    
+            <div class="definicao">
+                <h2 class="sub-titulo">Definição</h2>
+                <p>
+                    A tag &lt;meta&gt; define metadados sobre um documento HTML. Metadados são dados (informações) sobre dados.<br>
+    
+                    tags &lt;meta&gt;  sempre ficam dentro do elemento &lt;head&gt; e normalmente são usadas para especificar conjunto de caracteres, descrição da página, palavras-chave, autor do documento e configurações da janela de visualização.<br>
+    
+                    Os metadados não serão exibidos na página, mas podem ser analisados ​​por máquina.<br>
+    
+                    Os metadados são usados ​​por navegadores (como exibir conteúdo ou recarregar páginas), mecanismos de pesquisa (palavras-chave) e outros serviços da web.<br>
+    
+                    Existe um método para permitir que os web designers assumam o controle da janela de visualização (a área visível do usuário em uma página da web), por meio da tag &lt;meta&gt;.<br>
+                </p>
+            </div>
+    
+            <div class="atributos">
+                <h2 class="sub-titulo">Atributos</h2>
+                <table class="tabelaTags">
+                    <thead>
+                        <tr>
+                            <th>Atibuto</th>
+                            <th>Valor</th>
+                            <th>Descrição</th>
+                        </tr>
+                    </thead>
+                    <tbody class="nthchild">
+                        <tr>
+                            <td>charset</td>
+                            <td>character_set</td>
+                            <td>Especifica a codificação de caracteres do documento HTML</td>
+                        </tr>
+                        <tr>
+                            <td>content</td>
+                            <td>text</td>
+                            <td>Especifica o valor associado ao atributo http-equiv ou name</td>
+                        </tr>
+                        <tr>
+                            <td>http-equiv</td>
+                            <td>
+                                <br>
+                                content-security-policy<br>
+                                content-type<br>
+                                default-style<br>
+                                refresh<br>
+                            </td>
+                            <td>Fornece um cabeçalho HTTP para a informação/valor do atributo content</td>
+                        </tr>
+                        <tr>
+                            <td>name</td>
+                            <td>
+                                <br>
+                                application-name<br>
+                                author<br>
+                                description<br>
+                                generator<br>
+                                keywords<br>
+                                viewport<br>
+                            </td>
+                            <td>Especifica um nome para os metadados</td>
+                        </tr>                    
+                    </tbody>
+                </table>
+                <h2 class="sub-titulo">Atributos Globais</h2>
+                <p>A tag &lt;meta&gt; também suporta atributos globais em HTML .</p>
+            </div>
+    
+            <div class="exemplo">
+                <h2 class="sub-titulo">Exemplo</h2>
+                <p>Descreva os metadados em um documento HTML:</p>
+                <div class="codigo">
+                    <code>
+        <pre>
+            
+            &lt;head>
+                &lt;meta charset="UTF-8"&gt;
+                &lt;meta name="description" content="Free Web tutorials"&gt;
+                &lt;meta name="keywords" content="HTML, CSS, JavaScript"&gt;
+                &lt;meta name="author" content="John Doe"&gt;
+                &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+            &lt;/head&gt;
+        </pre>                   
+                    </code>
+                </div>
+            </div>
+    
+            <div class="suporte">
+                <h2 class="sub-titulo">Suporte de navegador</h2>
+            </div>
+    
             <table class="tabelaTags">
                 <thead>
                     <tr>
-                        <th>Atibuto</th>
-                        <th>Valor</th>
-                        <th>Descrição</th>
+                        <th>Tag</th>
+                        <th><img src="../../imagens/chrome.png"></th>
+                        <th><img src="../../imagens/edge.png"></th>
+                        <th><img src="../../imagens/firefox.png"></th>
+                        <th><img src="../../imagens/safari.png"></th>
+                        <th><img src="../../imagens/opera.png"></th>
                     </tr>
                 </thead>
                 <tbody class="nthchild">
                     <tr>
-                        <td>charset</td>
-                        <td>character_set</td>
-                        <td>Especifica a codificação de caracteres do documento HTML</td>
-                    </tr>
-                    <tr>
-                        <td>content</td>
-                        <td>text</td>
-                        <td>Especifica o valor associado ao atributo http-equiv ou name</td>
-                    </tr>
-                    <tr>
-                        <td>http-equiv</td>
-                        <td>
-                            <br>
-                            content-security-policy<br>
-                            content-type<br>
-                            default-style<br>
-                            refresh<br>
-                        </td>
-                        <td>Fornece um cabeçalho HTTP para a informação/valor do atributo content</td>
-                    </tr>
-                    <tr>
-                        <td>name</td>
-                        <td>
-                            <br>
-                            application-name<br>
-                            author<br>
-                            description<br>
-                            generator<br>
-                            keywords<br>
-                            viewport<br>
-                        </td>
-                        <td>Especifica um nome para os metadados</td>
-                    </tr>                    
+                        <td>&lt;meta&gt;</td>
+                        <td>Sim</td>
+                        <td>Sim</td>
+                        <td>Sim</td>
+                        <td>Sim</td>
+                        <td>Sim</td>
+                    </tr>                                 
                 </tbody>
             </table>
-            <h2 class="sub-titulo">Atributos Globais</h2>
-            <p>A tag &lt;meta&gt; também suporta atributos globais em HTML .</p>
-        </div>
-
-        <div class="exemplo">
-            <h2 class="sub-titulo">Exemplo</h2>
-            <p>Descreva os metadados em um documento HTML:</p>
-            <div class="codigo">
-                <code>
-<pre>
-    &lt;head>
-        &lt;meta charset="UTF-8"&gt;
-        &lt;meta name="description" content="Free Web tutorials"&gt;
-        &lt;meta name="keywords" content="HTML, CSS, JavaScript"&gt;
-        &lt;meta name="author" content="John Doe"&gt;
-        &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
-    &lt;/head&gt;
-</pre>                   
-                </code>
+    
+            <div class="base">
+                <div class="botoes">
+                    <a href="../rian/iframe.html"><button class="botao_controle">iframe</button></a>
+                    <a href="../rian/script.html"><button class="botao_controle">script</button></a>
+                </div>
             </div>
-        </div>
-
-        <div class="suporte">
-            <h2 class="sub-titulo">Suporte de navegador</h2>
-        </div>
-
-        <table class="tabelaTags">
-            <thead>
-                <tr>
-                    <th>Tag</th>
-                    <th><img src="../../imagens/chrome.png"></th>
-                    <th><img src="../../imagens/edge.png"></th>
-                    <th><img src="../../imagens/firefox.png"></th>
-                    <th><img src="../../imagens/safari.png"></th>
-                    <th><img src="../../imagens/opera.png"></th>
-                </tr>
-            </thead>
-            <tbody class="nthchild">
-                <tr>
-                    <td>&lt;meta&gt;</td>
-                    <td>Sim</td>
-                    <td>Sim</td>
-                    <td>Sim</td>
-                    <td>Sim</td>
-                    <td>Sim</td>
-                </tr>                                 
-            </tbody>
-        </table>
-
-        <div class="base">
-            <div class="botoes">
-                <a href="../rian/iframe.html"><button class="botao_controle">iframe</button></a>
-                <a href="../rian/script.html"><button class="botao_controle">script</button></a>
-            </div>
-        </div>
-    </main>
+        </main>
+    </div>
 
     <footer class="rodape">
         <p>Copyright &copy; 2023 - Dev Web</p>

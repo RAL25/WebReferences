@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/tags.css">
+    <link rel="stylesheet" href="../../css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
@@ -22,61 +22,63 @@
         </div>
     </header>
 
-    <main class="corpo">
-        <div class="topo">
-            <h2 class="titulo">Tag HTML &lt;base&gt;</h2>
-        </div>
-        <div class="definicao">
-            <h2 class="sub-titulo">Definição</h2>
-            <p>
-                A tag &lt;base&gt; especifica o URL base e/ou destino para todos os URLs relativos em um documento.<br>
+    <div class="center">
+        <main class="corpo">
+            <div class="topo">
+                <h2 class="titulo">Tag HTML &lt;base&gt;</h2>
+            </div>
+            <div class="definicao">
+                <h2 class="sub-titulo">Definição</h2>
+                <p>
+                    A tag &lt;base&gt; especifica o URL base e/ou destino para todos os URLs relativos em um documento.<br>
+    
+                    A tag &lt;base&gt; deve ter um atributo href ou target presente, ou ambos.<br>
+    
+                    Só pode haver um único elemento &lt;base&gt; em um documento e ele deve estar dentro do elemento &lt;head&gt;.<br>
+                </p>
+            </div>
+    
+            <div class="atributos">
+                <h2 class="sub-titulo">Atributos</h2>
+                <table class="tabelaTags">
+                    <thead>
+                        <tr>
+                            <th>Atributo</th>
+                            <th>Valor</th>
+                            <th>Descrição</th>
+                        </tr>
+                    </thead>
+                    <tbody class="nthchild">
+                        <tr>
+                            <td>href</td>
+                            <td>URL</td>
+                            <td>Especifica o URL base para todos os URLs relativos na página</td>
+                        </tr>
+                        <tr>
+                            <td>target</td>
+                            <td><br>
+                                _blank<br>
+                                _parent<br>
+                                _self<br>
+                                _top<br>
+                            </td>
+                            <td>Especifica o destino padrão para todos os hiperlinks e formulários na página</td>
+                        </tr>                    
+                    </tbody>
+                </table>
+                <h2 class="sub-titulo">Atributos Globais</h2>
+                <p>A tag &lt;base&gt; também suporta atributos globais em HTML .</p>
+                <h2 class="sub-titulo">Atributos de Evento</h2>
+                <p>A tag &lt;base&gt; não suporta atributos de evento em HTML .</p>
+            </div>
+    
+            <div class="exemplo">
+                <h2 class="sub-titulo">Exemplo</h2>
+                <p>Especifique um URL padrão e um destino padrão para todos os links de uma página:</p>
+                <div class="codigo">
+                    <code>
+    <pre >
 
-                A tag &lt;base&gt; deve ter um atributo href ou target presente, ou ambos.<br>
-
-                Só pode haver um único elemento &lt;base&gt; em um documento e ele deve estar dentro do elemento &lt;head&gt;.<br>
-            </p>
-        </div>
-
-        <div class="atributos">
-            <h2 class="sub-titulo">Atributos</h2>
-            <table class="tabelaTags">
-                <thead>
-                    <tr>
-                        <th>Atributo</th>
-                        <th>Valor</th>
-                        <th>Descrição</th>
-                    </tr>
-                </thead>
-                <tbody class="nthchild">
-                    <tr>
-                        <td>href</td>
-                        <td>URL</td>
-                        <td>Especifica o URL base para todos os URLs relativos na página</td>
-                    </tr>
-                    <tr>
-                        <td>target</td>
-                        <td><br>
-                            _blank<br>
-                            _parent<br>
-                            _self<br>
-                            _top<br>
-                        </td>
-                        <td>Especifica o destino padrão para todos os hiperlinks e formulários na página</td>
-                    </tr>                    
-                </tbody>
-            </table>
-            <h2 class="sub-titulo">Atributos Globais</h2>
-            <p>A tag &lt;base&gt; também suporta atributos globais em HTML .</p>
-            <h2 class="sub-titulo">Atributos de Evento</h2>
-            <p>A tag &lt;base&gt; não suporta atributos de evento em HTML .</p>
-        </div>
-
-        <div class="exemplo">
-            <h2 class="sub-titulo">Exemplo</h2>
-            <p>Especifique um URL padrão e um destino padrão para todos os links de uma página:</p>
-            <div class="codigo">
-                <code>
-<pre>
     &lt;head&gt;
         &lt;base hreaf="https://www.w3schools.com/" target="_blank"&gt;  
     &lt;head\&gt;
@@ -85,45 +87,46 @@
         &lt;img src="images/stickman.gif" width="24" height="39" alt="Stickman"&gt;
         &lt;a href="tags/tag_base.asp&gt;HTML base Tag&lt;/a&gt; 
     &lt;body\&gt;
-</pre>                   
-                </code>
+    </pre>                   
+                    </code>
+                </div>
             </div>
-        </div>
-
-        <div class="suporte">
-            <h2 class="sub-titulo">Suporte de navegador</h2>
-        </div>
-
-        <table class="tabelaTags">
-            <thead>
-                <tr>
-                    <th>Tag</th>
-                    <th><img src="../../imagens/chrome.png"></th>
-                    <th><img src="../../imagens/edge.png"></th>
-                    <th><img src="../../imagens/firefox.png"></th>
-                    <th><img src="../../imagens/safari.png"></th>
-                    <th><img src="../../imagens/opera.png"></th>
-                </tr>
-            </thead>
-            <tbody class="nthchild">
-                <tr>
-                    <td>&lt;base&gt;</td>
-                    <td>Sim</td>
-                    <td>Sim</td>
-                    <td>Sim</td>
-                    <td>Sim</td>
-                    <td>Sim</td>
-                </tr>                                 
-            </tbody>
-        </table>
-
-        <div class="base">
-            <div class="botoes">
-                <a href="../rian/a.html"><button class="botao_controle">a</button></a>
-                <a href="../yodemis/code.html"><button class="botao_controle">code</button></a>
+    
+            <div class="suporte">
+                <h2 class="sub-titulo">Suporte de navegador</h2>
             </div>
-        </div>
-    </main>
+    
+            <table class="tabelaTags">
+                <thead>
+                    <tr>
+                        <th>Tag</th>
+                        <th><img src="../../imagens/chrome.png"></th>
+                        <th><img src="../../imagens/edge.png"></th>
+                        <th><img src="../../imagens/firefox.png"></th>
+                        <th><img src="../../imagens/safari.png"></th>
+                        <th><img src="../../imagens/opera.png"></th>
+                    </tr>
+                </thead>
+                <tbody class="nthchild">
+                    <tr>
+                        <td>&lt;base&gt;</td>
+                        <td>Sim</td>
+                        <td>Sim</td>
+                        <td>Sim</td>
+                        <td>Sim</td>
+                        <td>Sim</td>
+                    </tr>                                 
+                </tbody>
+            </table>
+    
+            <div class="base">
+                <div class="botoes">
+                    <a href="../rian/a.html"><button class="botao_controle">a</button></a>
+                    <a href="../yodemis/code.html"><button class="botao_controle">code</button></a>
+                </div>
+            </div>
+        </main>
+    </div>
 
     <footer class="rodape">
         <p>Copyright &copy; 2023 - Dev Web</p>

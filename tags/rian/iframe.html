@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/tags.css">
+    <link rel="stylesheet" href="../../css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
@@ -22,153 +22,156 @@
         </div>
     </header>
 
-    <main class="corpo">
-        <div class="topo">
-            <h2 class="titulo">Tag HTML &lt;iframe&gt;</h2>
-        </div>
-
-        <div class="definicao">
-            <h2 class="sub-titulo">Definição</h2>
-            <p>
-                A tag &lt;iframe&gt; especifica um quadro embutido. Um quadro embutido é usado para incorporar outro documento no documento HTML atual. <br><br>
+    <div class="center">
+        <main class="corpo">
+            <div class="topo">
+                <h2 class="titulo">Tag HTML &lt;iframe&gt;</h2>
+            </div>
+    
+            <div class="definicao">
+                <h2 class="sub-titulo">Definição</h2>
+                <p>
+                    A tag &lt;iframe&gt; especifica um quadro embutido. Um quadro embutido é usado para incorporar outro documento no documento HTML atual. <br><br>
+                        
+                    Dica: Use CSS para estilizar o &lt;iframe&gt; ( veja o exemplo abaixo ). <br><br>
                     
-                Dica: Use CSS para estilizar o &lt;iframe&gt; ( veja o exemplo abaixo ). <br><br>
-                
-                Dica: É uma boa prática sempre incluir um título atributo para o &lt;iframe&gt;. Isto é usado pelos leitores de tela para ler qual é o conteúdo do &lt;iframe&gt; é.
-            </p>
-        </div>
-
-        <div class="atributos">
-            <h2 class="sub-titulo">Atributos</h2>
+                    Dica: É uma boa prática sempre incluir um título atributo para o &lt;iframe&gt;. Isto é usado pelos leitores de tela para ler qual é o conteúdo do &lt;iframe&gt; é.
+                </p>
+            </div>
+    
+            <div class="atributos">
+                <h2 class="sub-titulo">Atributos</h2>
+                <table class="tabelaTags">
+                    <thead>
+                        <tr>
+                            <th>Tag</th>
+                            <th>Valor</th>
+                            <th>Descrição</th>
+                        </tr>
+                    </thead>
+                    <tbody class="nthchild">
+                        <tr>
+                            <td>allow</td>
+                            <td></td>
+                            <td>Especifica uma política de recursos para o &lt;iframe&gt;</td>
+                        </tr>
+                        <tr>
+                            <td>allowfullscreen</td>
+                            <td>true <br>false</td>
+                            <td>Defina como verdadeiro se o &lt;iframe&gt; puder ativar o modo de tela cheia chamando o método requestFullscreen()</td>
+                        </tr>
+                        <tr>
+                            <td>allowpaymentrequest</td>
+                            <td>true <br>false</td>
+                            <td>Definido como verdadeiro se um &lt;iframe&gt; de origem cruzada tiver permissão para invocar a API de solicitação de pagamento</td>
+                        </tr>
+                        <tr>
+                            <td>height</td>
+                            <td>pixels</td>
+                            <td>Especifica a altura de um &lt;iframe&gt;. A altura padrão é 150 pixels</td>
+                        </tr>
+                        <tr>
+                            <td>loading</td>
+                            <td>eager <br>lazy</td>
+                            <td>Especifica se um navegador deve carregar um iframe imediatamente ou adiar o carregamento de iframes até que algumas condições sejam atendidas</td>
+                        </tr>
+                        <tr>
+                            <td>name</td>
+                            <td>text</td>
+                            <td>Especifica o nome de um &lt;iframe&gt;</td>
+                        </tr>
+                        <tr>
+                            <td>referrerpolicy</td>
+                            <td>no-referrer <br>
+                                no-referrer-when-downgrade<br>
+                                origin<br>
+                                origin-when-cross-origin<br>
+                                same-origin<br>
+                                strict-origin-when-cross-origin<br>
+                                unsafe-url</td>
+                            <td>Especifica quais informações de referência serão enviadas ao buscar o iframe</td>
+                        </tr>
+                        <tr>
+                            <td>sandbox</td>
+                            <td>allow-forms<br>
+                                allow-pointer-lock<br>
+                                allow-popups<br>
+                                allow-same-origin<br>
+                                allow-scripts<br>
+                                allow-top-navigation</td>
+                            <td>Habilita um conjunto extra de restrições para o conteúdo em um &lt;iframe&gt; </td>
+                        </tr>
+                        <tr>
+                            <td>src</td>
+                            <td>URL</td>
+                            <td>Especifica o endereço do documento a ser incorporado no &lt;iframe&gt;</td>
+                        </tr>
+                        <tr>
+                            <td>srcdoc</td>
+                            <td>HTML_code</td>
+                            <td>Especifica o conteúdo HTML da página a ser mostrada no &lt;iframe&gt;</td>
+                        </tr>
+                        <tr>
+                            <td>width</td>
+                            <td>pixels</td>
+                            <td>Especifica a largura de um &lt;iframe&gt;. A largura padrão é 300 pixels</td>
+                        </tr>                    
+                    </tbody>
+                </table>
+                <h2 class="sub-titulo">Atributos Globais</h2>
+                <p>A tag<code> &lt;iframe&gt; </code> também suporta o Atributos globais em HTML.</p>
+                <h2 class="sub-titulo">Atributos Especificos</h2>
+                <p>A tag <code> &lt;iframe&gt; </code> também suporta o Atributos de eventos em HTML.</p>
+            </div>
+    
+            <div class="exemplo">
+                <h2 class="sub-titulo">Exemplo</h2>
+                <p>Um quadro embutido é marcado da seguinte maneira:</p>
+                <div class="codigo">                
+                    <code>
+    <pre>
+        
+        &lt;iframe src="https://www.w3schools.com" title="W3Schools Free Online Web Tutorials"&gt;&lt;/iframe&gt;
+    </pre>                   
+                    </code>
+                </div>
+            </div>
+    
+            <div class="suporte">
+                <h2 class="sub-titulo">Suporte de navegador</h2>
+            </div>
+    
             <table class="tabelaTags">
                 <thead>
                     <tr>
                         <th>Tag</th>
-                        <th>Valor</th>
-                        <th>Descrição</th>
+                        <th><img src="../../imagens/chrome.png"></th>
+                        <th><img src="../../imagens/edge.png"></th>
+                        <th><img src="../../imagens/firefox.png"></th>
+                        <th><img src="../../imagens/safari.png"></th>
+                        <th><img src="../../imagens/opera.png"></th>
                     </tr>
                 </thead>
                 <tbody class="nthchild">
                     <tr>
-                        <td>allow</td>
-                        <td></td>
-                        <td>Especifica uma política de recursos para o &lt;iframe&gt;</td>
-                    </tr>
-                    <tr>
-                        <td>allowfullscreen</td>
-                        <td>true <br>false</td>
-                        <td>Defina como verdadeiro se o &lt;iframe&gt; puder ativar o modo de tela cheia chamando o método requestFullscreen()</td>
-                    </tr>
-                    <tr>
-                        <td>allowpaymentrequest</td>
-                        <td>true <br>false</td>
-                        <td>Definido como verdadeiro se um &lt;iframe&gt; de origem cruzada tiver permissão para invocar a API de solicitação de pagamento</td>
-                    </tr>
-                    <tr>
-                        <td>height</td>
-                        <td>pixels</td>
-                        <td>Especifica a altura de um &lt;iframe&gt;. A altura padrão é 150 pixels</td>
-                    </tr>
-                    <tr>
-                        <td>loading</td>
-                        <td>eager <br>lazy</td>
-                        <td>Especifica se um navegador deve carregar um iframe imediatamente ou adiar o carregamento de iframes até que algumas condições sejam atendidas</td>
-                    </tr>
-                    <tr>
-                        <td>name</td>
-                        <td>text</td>
-                        <td>Especifica o nome de um &lt;iframe&gt;</td>
-                    </tr>
-                    <tr>
-                        <td>referrerpolicy</td>
-                        <td>no-referrer <br>
-                            no-referrer-when-downgrade<br>
-                            origin<br>
-                            origin-when-cross-origin<br>
-                            same-origin<br>
-                            strict-origin-when-cross-origin<br>
-                            unsafe-url</td>
-                        <td>Especifica quais informações de referência serão enviadas ao buscar o iframe</td>
-                    </tr>
-                    <tr>
-                        <td>sandbox</td>
-                        <td>allow-forms<br>
-                            allow-pointer-lock<br>
-                            allow-popups<br>
-                            allow-same-origin<br>
-                            allow-scripts<br>
-                            allow-top-navigation</td>
-                        <td>Habilita um conjunto extra de restrições para o conteúdo em um &lt;iframe&gt; </td>
-                    </tr>
-                    <tr>
-                        <td>src</td>
-                        <td>URL</td>
-                        <td>Especifica o endereço do documento a ser incorporado no &lt;iframe&gt;</td>
-                    </tr>
-                    <tr>
-                        <td>srcdoc</td>
-                        <td>HTML_code</td>
-                        <td>Especifica o conteúdo HTML da página a ser mostrada no &lt;iframe&gt;</td>
-                    </tr>
-                    <tr>
-                        <td>width</td>
-                        <td>pixels</td>
-                        <td>Especifica a largura de um &lt;iframe&gt;. A largura padrão é 300 pixels</td>
-                    </tr>                    
+                        <td>&lt;iframe&gt;</td>
+                        <td>Sim</td>
+                        <td>Sim</td>
+                        <td>Sim</td>
+                        <td>Sim</td>
+                        <td>Sim</td>
+                    </tr>                                 
                 </tbody>
             </table>
-            <h2 class="sub-titulo">Atributos Globais</h2>
-            <p>A tag<code> &lt;iframe&gt; </code> também suporta o Atributos globais em HTML.</p>
-            <h2 class="sub-titulo">Atributos Especificos</h2>
-            <p>A tag <code> &lt;iframe&gt; </code> também suporta o Atributos de eventos em HTML.</p>
-        </div>
-
-        <div class="exemplo">
-            <h2 class="sub-titulo">Exemplo</h2>
-            <p>Um quadro embutido é marcado da seguinte maneira:</p>
-            <div class="codigo">                
-                <code>
-<pre>
-    &lt;iframe src="https://www.w3schools.com" title="W3Schools Free Online Web Tutorials"&gt;&lt;/iframe&gt;
-</pre>                   
-                </code>
+    
+            <div class="base">
+                <div class="botoes">
+                    <a href="../yodemis/header.html"><button class="botao_controle">header</button></a>
+                    <a href="../yodemis/meta.html"><button class="botao_controle">meta</button></a>
+                </div>
             </div>
-        </div>
-
-        <div class="suporte">
-            <h2 class="sub-titulo">Suporte de navegador</h2>
-        </div>
-
-        <table class="tabelaTags">
-            <thead>
-                <tr>
-                    <th>Tag</th>
-                    <th><img src="../../imagens/chrome.png"></th>
-                    <th><img src="../../imagens/edge.png"></th>
-                    <th><img src="../../imagens/firefox.png"></th>
-                    <th><img src="../../imagens/safari.png"></th>
-                    <th><img src="../../imagens/opera.png"></th>
-                </tr>
-            </thead>
-            <tbody class="nthchild">
-                <tr>
-                    <td>&lt;iframe&gt;</td>
-                    <td>Sim</td>
-                    <td>Sim</td>
-                    <td>Sim</td>
-                    <td>Sim</td>
-                    <td>Sim</td>
-                </tr>                                 
-            </tbody>
-        </table>
-
-        <div class="base">
-            <div class="botoes">
-                <a href="../yodemis/header.html"><button class="botao_controle">header</button></a>
-                <a href="../yodemis/meta.html"><button class="botao_controle">meta</button></a>
-            </div>
-        </div>
-    </main>
+        </main>
+    </div>
 
     <footer class="rodape">
         <p>Copyright &copy; 2023 - Dev Web</p>

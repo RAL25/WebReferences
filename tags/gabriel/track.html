@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/tags.css">
+    <link rel="stylesheet" href="../../css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
@@ -22,116 +22,119 @@
         </div>
     </header>
 
-    <main class="corpo">
-        <div class="topo">
-            <h2 class="titulo">Tag HTML &lt;track&gt;</h2>
-        </div>
-
-        <div class="definicao">
-            <h2 class="sub-titulo">Definição</h2>
-            <p>
-                A tag &lt;track&gt; especifica faixas de texto para elementos &lt;audio&gt; ou &lt;video&gt;. Este elemento é usado para especificar legendas, arquivos de legenda ou outros arquivos contendo texto, que devem estar visíveis durante a reprodução da mídia.
-                As faixas são formatadas no formato WebVTT (arquivos .vtt).
-            </p>
-        </div>
-
-        <div class="atributos">
-            <h2 class="sub-titulo">Atributos</h2>
+    <div class="center">
+        <main class="corpo">
+            <div class="topo">
+                <h2 class="titulo">Tag HTML &lt;track&gt;</h2>
+            </div>
+    
+            <div class="definicao">
+                <h2 class="sub-titulo">Definição</h2>
+                <p>
+                    A tag &lt;track&gt; especifica faixas de texto para elementos &lt;audio&gt; ou &lt;video&gt;. Este elemento é usado para especificar legendas, arquivos de legenda ou outros arquivos contendo texto, que devem estar visíveis durante a reprodução da mídia.
+                    As faixas são formatadas no formato WebVTT (arquivos .vtt).
+                </p>
+            </div>
+    
+            <div class="atributos">
+                <h2 class="sub-titulo">Atributos</h2>
+                <table class="tabelaTags">
+                    <thead>
+                        <tr>
+                            <th>Atributo</th>
+                            <th>Valor</th>
+                            <th>Descrição</th>
+                        </tr>
+                    </thead>
+                    <tbody class="nthchild">
+                        <tr>
+                            <td> defalut </td>
+                            <td> default </td>
+                            <td> Especifica que a faixa deve ser habilitada se as preferências do usuário não indicarem que outra faixa seria mais apropriada </td>
+                        </tr>                    
+                        <tr>
+                            <td> kind </td>
+                            <td> captions, chapters, descriptions, metadata, subtitles </td>
+                            <td> Especifica o tipo de faixa de texto </td>
+                        </tr>                    
+                        <tr>
+                            <td> label </td>
+                            <td> text </td>
+                            <td> Especifica o título da faixa de texto </td>
+                        </tr>
+                        <tr>
+                            <td> scr </td>
+                            <td> URL </td>
+                            <td> Especifica o URL do arquivo de rastreamento </td>
+                        </tr>
+                        <tr>
+                            <td> scrlang </td>
+                            <td> language</td>
+                            <td> Especifica o idioma dos dados de texto da faixa (obrigatório se kind="subtitles")</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <h2 class="sub-titulo">Atributos Globais</h2>
+                <p>A tag &lt;track&gt; suporta atributos globais do HTML.</p>
+    
+                <h2 class="sub-titulo">Atributos de Eventos</h2>
+                <p>A tag &lt;track&gt; suporta atributos de enventos do HTML.</p>
+            </div>
+    
+    
+            <div class="exemplo">
+                <h2 class="sub-titulo">Exemplo</h2>
+                <p>Um vídeo com legendas em dois idiomas:</p>
+                <div class="codigo">
+                    <code>
+    <pre>
+        
+        &lt;video width="320" height="240" controls&gt;
+            &lt;source src="forrest_gump.mp4" type="video/mp4"&gt;
+            &lt;source src="forrest_gump.ogg" type="video/ogg"&gt;
+            &lt;track src="fgsubtitles_en.vtt" kind="subtitles" srclang="en" label="English"&gt;
+            &lt;track src="fgsubtitles_no.vtt" kind="subtitles" srclang="no" label="Norwegian"&gt;
+        &lt;/track&gt;
+    </pre>                   
+                    </code>
+                </div>
+            </div>
+    
+            <div class="suporte">
+                <h2 class="sub-titulo">Suporte de navegador</h2>
+            </div>
+    
             <table class="tabelaTags">
                 <thead>
                     <tr>
-                        <th>Atributo</th>
-                        <th>Valor</th>
-                        <th>Descrição</th>
+                        <th>Tag</th>
+                        <th><img alt="Crhome" src="../../imagens/chrome.png"></th>
+                        <th><img src="../../imagens/edge.png"></th>
+                        <th><img src="../../imagens/firefox.png"></th>
+                        <th><img src="../../imagens/safari.png"></th>
+                        <th><img src="../../imagens/opera.png"></th>
                     </tr>
                 </thead>
                 <tbody class="nthchild">
                     <tr>
-                        <td> defalut </td>
-                        <td> default </td>
-                        <td> Especifica que a faixa deve ser habilitada se as preferências do usuário não indicarem que outra faixa seria mais apropriada </td>
-                    </tr>                    
-                    <tr>
-                        <td> kind </td>
-                        <td> captions, chapters, descriptions, metadata, subtitles </td>
-                        <td> Especifica o tipo de faixa de texto </td>
-                    </tr>                    
-                    <tr>
-                        <td> label </td>
-                        <td> text </td>
-                        <td> Especifica o título da faixa de texto </td>
-                    </tr>
-                    <tr>
-                        <td> scr </td>
-                        <td> URL </td>
-                        <td> Especifica o URL do arquivo de rastreamento </td>
-                    </tr>
-                    <tr>
-                        <td> scrlang </td>
-                        <td> language</td>
-                        <td> Especifica o idioma dos dados de texto da faixa (obrigatório se kind="subtitles")</td>
-                    </tr>
+                        <td>&lt;track&gt;</td>
+                        <td>23.0</td>
+                        <td>10.0</td>
+                        <td>31.0</td>
+                        <td>6.0</td>
+                        <td>12.1</td>
+                    </tr>                                 
                 </tbody>
             </table>
-            <h2 class="sub-titulo">Atributos Globais</h2>
-            <p>A tag &lt;track&gt; suporta atributos globais do HTML.</p>
-
-            <h2 class="sub-titulo">Atributos de Eventos</h2>
-            <p>A tag &lt;track&gt; suporta atributos de enventos do HTML.</p>
-        </div>
-
-
-        <div class="exemplo">
-            <h2 class="sub-titulo">Exemplo</h2>
-            <p>Um vídeo com legendas em dois idiomas:</p>
-            <div class="codigo">
-                <code>
-<pre>
-    &lt;video width="320" height="240" controls&gt;
-        &lt;source src="forrest_gump.mp4" type="video/mp4"&gt;
-        &lt;source src="forrest_gump.ogg" type="video/ogg"&gt;
-        &lt;track src="fgsubtitles_en.vtt" kind="subtitles" srclang="en" label="English"&gt;
-        &lt;track src="fgsubtitles_no.vtt" kind="subtitles" srclang="no" label="Norwegian"&gt;
-    &lt;/track&gt;
-</pre>                   
-                </code>
+    
+            <div class="base">
+                <div class="botoes">
+                    <a href="../yodemis/textarea.html"><button class="botao_controle">textarea</button></a>
+                    <a href="../gabriel/var.html"><button class="botao_controle">var</button></a>
+                </div>
             </div>
-        </div>
-
-        <div class="suporte">
-            <h2 class="sub-titulo">Suporte de navegador</h2>
-        </div>
-
-        <table class="tabelaTags">
-            <thead>
-                <tr>
-                    <th>Tag</th>
-                    <th><img alt="Crhome" src="../../imagens/chrome.png"></th>
-                    <th><img src="../../imagens/edge.png"></th>
-                    <th><img src="../../imagens/firefox.png"></th>
-                    <th><img src="../../imagens/safari.png"></th>
-                    <th><img src="../../imagens/opera.png"></th>
-                </tr>
-            </thead>
-            <tbody class="nthchild">
-                <tr>
-                    <td>&lt;track&gt;</td>
-                    <td>23.0</td>
-                    <td>10.0</td>
-                    <td>31.0</td>
-                    <td>6.0</td>
-                    <td>12.1</td>
-                </tr>                                 
-            </tbody>
-        </table>
-
-        <div class="base">
-            <div class="botoes">
-                <a href="../yodemis/textarea.html"><button class="botao_controle">textarea</button></a>
-                <a href="../gabriel/var.html"><button class="botao_controle">var</button></a>
-            </div>
-        </div>
-    </main>
+        </main>
+    </div>
 
     <footer class="rodape">
         <p>Copyright &copy; 2023 - Dev Web</p>

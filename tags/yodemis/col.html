@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/tags.css">
+    <link rel="stylesheet" href="../../css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
@@ -22,105 +22,108 @@
         </div>
     </header>
 
-    <main class="corpo">
-        <div class="topo">
-            <h2 class="titulo">Tag HTML &lt;col&gt;</h2>
-        </div>
-
-        <div class="definicao">
-            <h2 class="sub-titulo">Definição</h2>
-            <p>
-                A tag &lt;col&gt; especifica propriedades de coluna para cada coluna dentro de um elemento &lt;colgroup&gt;.<br>
-                A tag &lt;col&gt; é útil para aplicar estilos a colunas inteiras, em vez de repetir os estilos para cada célula, para cada linha.
-            </p>
-        </div>
-
-        <div class="atributos">
-            <h2 class="sub-titulo">Atributos</h2>
+    <div class="center">
+        <main class="corpo">
+            <div class="topo">
+                <h2 class="titulo">Tag HTML &lt;col&gt;</h2>
+            </div>
+    
+            <div class="definicao">
+                <h2 class="sub-titulo">Definição</h2>
+                <p>
+                    A tag &lt;col&gt; especifica propriedades de coluna para cada coluna dentro de um elemento &lt;colgroup&gt;.<br>
+                    A tag &lt;col&gt; é útil para aplicar estilos a colunas inteiras, em vez de repetir os estilos para cada célula, para cada linha.
+                </p>
+            </div>
+    
+            <div class="atributos">
+                <h2 class="sub-titulo">Atributos</h2>
+                <table class="tabelaTags">
+                    <thead>
+                        <tr>
+                            <th>Atibuto</th>
+                            <th>Valor</th>
+                            <th>Descrição</th>
+                        </tr>
+                    </thead>
+                    <tbody class="nthchild">
+                        <tr>
+                            <td>span</td>
+                            <td>number</td>
+                            <td>Especifica o número de colunas que um elemento &lt;col&gt; deve abranger</td>
+                        </tr>                    
+                    </tbody>
+                </table>
+                <h2 class="sub-titulo">Atributos Globais</h2>
+                <p>A tag &lt;col&gt; também suporta atributos globais em HTML.</p>
+                <h2 class="sub-titulo">Atributos de Evento</h2>
+                <p>A tag &lt;col&gt; também suporta atributos de eventos em HTML.</p>
+            </div>
+    
+            <div class="exemplo">
+                <h2 class="sub-titulo">Exemplo</h2>
+                <p>Defina a cor de fundo das três colunas com as tags &lt;colgroup&gt; e &lt;col&gt;:
+                </p>
+                <div class="codigo">
+                    <code>
+    <pre>
+        
+        &lt;table>
+            &lt;colgroup&gt;
+                &lt;col span="2" style="background-color:red"&gt;
+                &lt;col style="background-color:yellow"&gt;
+            &lt;/colgroup&gt;
+            &lt;tr&gt;
+                &lt;th&gt;ISBN&lt;/th&gt;
+                &lt;th&gt;Title&lt;/th&gt;
+                &lt;th&gt;Price&lt;/th&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td&gt;3476896&lt;/td&gt;
+                &lt;td&gt;My first HTML&lt;/td&gt;
+                &lt;td&gt;$53&lt;/td&gt;
+            &lt;/tr&gt;
+        &lt;/table&gt;
+    </pre>                   
+                    </code>
+                </div>
+            </div>
+    
+            <div class="suporte">
+                <h2 class="sub-titulo">Suporte de navegador</h2>
+            </div>
+    
             <table class="tabelaTags">
                 <thead>
                     <tr>
-                        <th>Atibuto</th>
-                        <th>Valor</th>
-                        <th>Descrição</th>
+                        <th>Tag</th>
+                        <th><img src="../../imagens/chrome.png"></th>
+                        <th><img src="../../imagens/edge.png"></th>
+                        <th><img src="../../imagens/firefox.png"></th>
+                        <th><img src="../../imagens/safari.png"></th>
+                        <th><img src="../../imagens/opera.png"></th>
                     </tr>
                 </thead>
                 <tbody class="nthchild">
                     <tr>
-                        <td>span</td>
-                        <td>number</td>
-                        <td>Especifica o número de colunas que um elemento &lt;col&gt; deve abranger</td>
-                    </tr>                    
+                        <td>&lt;template&gt;</td>
+                        <td>Sim</td>
+                        <td>Sim</td>
+                        <td>Sim</td>
+                        <td>Sim</td>
+                        <td>Sim</td>
+                    </tr>                                 
                 </tbody>
             </table>
-            <h2 class="sub-titulo">Atributos Globais</h2>
-            <p>A tag &lt;col&gt; também suporta atributos globais em HTML.</p>
-            <h2 class="sub-titulo">Atributos de Evento</h2>
-            <p>A tag &lt;col&gt; também suporta atributos de eventos em HTML.</p>
-        </div>
-
-        <div class="exemplo">
-            <h2 class="sub-titulo">Exemplo</h2>
-            <p>Defina a cor de fundo das três colunas com as tags &lt;colgroup&gt; e &lt;col&gt;:
-            </p>
-            <div class="codigo">
-                <code>
-<pre>
-    &lt;table>
-        &lt;colgroup&gt;
-          &lt;col span="2" style="background-color:red"&gt;
-          &lt;col style="background-color:yellow"&gt;
-        &lt;/colgroup&gt;
-        &lt;tr&gt;
-          &lt;th&gt;ISBN&lt;/th&gt;
-          &lt;th&gt;Title&lt;/th&gt;
-          &lt;th&gt;Price&lt;/th&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-          &lt;td&gt;3476896&lt;/td&gt;
-          &lt;td&gt;My first HTML&lt;/td&gt;
-          &lt;td&gt;$53&lt;/td&gt;
-        &lt;/tr&gt;
-      &lt;/table&gt;
-</pre>                   
-                </code>
+    
+            <div class="base">
+                <div class="botoes">
+                    <a href="../yodemis/code.html"><button class="botao_controle">code</button></a>
+                    <a href="../rian/dl.html"><button class="botao_controle">dl</button></a>
+                </div>
             </div>
-        </div>
-
-        <div class="suporte">
-            <h2 class="sub-titulo">Suporte de navegador</h2>
-        </div>
-
-        <table class="tabelaTags">
-            <thead>
-                <tr>
-                    <th>Tag</th>
-                    <th><img src="../../imagens/chrome.png"></th>
-                    <th><img src="../../imagens/edge.png"></th>
-                    <th><img src="../../imagens/firefox.png"></th>
-                    <th><img src="../../imagens/safari.png"></th>
-                    <th><img src="../../imagens/opera.png"></th>
-                </tr>
-            </thead>
-            <tbody class="nthchild">
-                <tr>
-                    <td>&lt;template&gt;</td>
-                    <td>Sim</td>
-                    <td>Sim</td>
-                    <td>Sim</td>
-                    <td>Sim</td>
-                    <td>Sim</td>
-                </tr>                                 
-            </tbody>
-        </table>
-
-        <div class="base">
-            <div class="botoes">
-                <a href="../yodemis/code.html"><button class="botao_controle">code</button></a>
-                <a href="../rian/dl.html"><button class="botao_controle">dl</button></a>
-            </div>
-        </div>
-    </main>
+        </main>
+    </div>
 
     <footer class="rodape">
         <p>Copyright &copy; 2023 - Dev Web</p>
