@@ -174,4 +174,10 @@ table {
     background-color: #f2f2f2; /* Cor de fundo das linhas pares */
   }
 
+
+  @media screen and (max-width: 900px) {
+    .equipe{
+        flex-direction: column;
+    }
+  }
   
