@@ -126,9 +126,7 @@ pre{
     padding-right: 25px;
     text-align: left;
     white-space: pre-wrap;
-    overflow-wrap: break-word;
-      
-      
+    overflow-wrap: break-word;      
 }
 .center{
     max-width: 1200px;
