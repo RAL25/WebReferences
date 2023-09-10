@@ -184,4 +184,9 @@ table {
         max-width: 92%;
     }
   }
+
+  .p{
+    display: inline;
+    color: #da1738;
+  }
   
