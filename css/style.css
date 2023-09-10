@@ -179,5 +179,9 @@ table {
     .equipe{
         flex-direction: column;
     }
+
+    .center{
+        max-width: 92%;
+    }
   }
   
